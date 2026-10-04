@@ -105,6 +105,7 @@
   const techItems = $$(".tech");
   const stageImgs = $(".stage__imgs");
   const stageName = $(".stage__name");
+  const stageBadge = $(".stage__badge");
   const shadesWrap = $(".stage__shades");
   const shadeBtns = $$(".shade", shadesWrap);
   let activeTech = null;
@@ -138,6 +139,8 @@
       $(".tech__head", t).setAttribute("aria-expanded", on);
     });
     stageName.textContent = item.dataset.name;
+    stageBadge.classList.toggle("is-visible", !!item.dataset.badge);
+    if (item.dataset.badge) stageBadge.textContent = `✦ ${item.dataset.badge}`;
     shadesWrap.classList.toggle("is-disabled", !images.marrom);
     shadeBtns.forEach((b) => {
       const on = b.dataset.shade === shade;
