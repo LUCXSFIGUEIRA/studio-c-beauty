@@ -205,7 +205,6 @@
   const shots = $$(".shot");
   const lightbox = $(".lightbox");
   const lbImg = $(".lightbox__fig img", lightbox);
-  const lbCap = $(".lightbox__fig figcaption", lightbox);
   let lbIndex = 0;
   let lastFocus = null;
 
@@ -214,7 +213,6 @@
     const img = $("img", shots[lbIndex]);
     lbImg.src = img.currentSrc || img.src;
     lbImg.alt = img.alt;
-    lbCap.textContent = $("figcaption", shots[lbIndex]).textContent.replace(/^\d+/, "").trim();
   };
   const openLightbox = (i) => {
     lastFocus = document.activeElement;
