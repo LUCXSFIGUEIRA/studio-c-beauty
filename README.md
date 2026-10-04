@@ -27,7 +27,9 @@ git push -u origin main
 No GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)` → Save**.
 Em ~1 minuto o site fica disponível em `https://<usuario>.github.io/<repositorio>/`.
 
-Depois de publicado, troque `images/aurora-preto.jpg` nas tags `og:image` e no JSON-LD do `index.html` pela URL completa (ex.: `https://<usuario>.github.io/<repositorio>/images/aurora-preto.jpg`) para a prévia aparecer ao compartilhar o link no WhatsApp/Instagram.
+**Site no ar:** https://lucxsfigueira.github.io/studio-c-beauty/
+
+As URLs absolutas (`og:image`, `og:url`, `canonical` e JSON-LD) já apontam para esse endereço. Se mudar o domínio, atualize-as no `index.html`.
 
 ## Estrutura
 
