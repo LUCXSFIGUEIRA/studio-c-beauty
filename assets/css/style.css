@@ -213,13 +213,15 @@ p { margin: 0; }
 }
 .hero__frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; transform-origin: 50% 40%; }
 .hero__thumb {
-  position: absolute; top: 14%; left: -16%; width: 38%; margin: 0;
-  background: var(--paper); padding: 8px 8px 0; border-radius: 16px; box-shadow: 0 30px 60px -20px rgba(29,22,19,.35);
+  position: absolute; left: -14%; bottom: 9%; width: 34%; margin: 0; z-index: 2;
+  background: var(--paper); padding: 8px; border-radius: 18px; box-shadow: 0 30px 60px -20px rgba(29,22,19,.4);
 }
-.hero__thumb img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; }
-.hero__thumb figcaption { font-family: var(--serif); font-style: italic; font-size: 17px; text-align: center; padding: 8px 0 10px; }
+.hero__thumb-img { display: block; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 12px; }
+.hero__thumb-img img { width: 100%; height: 100%; object-fit: cover; transform: translateY(20%) scale(1.8); transform-origin: 50% 27%; }
+.hero__thumb figcaption { display: flex; flex-direction: column; padding: 10px 6px 4px; font-family: var(--serif); font-style: italic; font-size: 19px; line-height: 1.2; }
+.hero__thumb figcaption small { font-family: var(--sans); font-style: normal; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: var(--bronze); margin-bottom: 2px; }
 .hero__badge {
-  position: absolute; right: -6%; bottom: 8%; width: clamp(120px, 11vw, 160px); aspect-ratio: 1; border-radius: 50%;
+  position: absolute; right: -6%; top: 9%; width: clamp(120px, 11vw, 160px); aspect-ratio: 1; border-radius: 50%;
   background: var(--ink); color: var(--cream); display: flex; align-items: center; justify-content: center;
   transition: background .5s var(--ease), transform .5s var(--ease);
 }
@@ -512,7 +514,7 @@ p { margin: 0; }
   .hero { padding-top: calc(var(--header-h) + 32px); min-height: auto; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__media { width: min(100%, 460px); margin: 10px auto 0; padding: 0 10% 0 14%; }
-  .hero__thumb { left: 0; width: 34%; }
+  .hero__thumb { left: 0; width: 36%; bottom: 6%; }
   .hero__badge { right: 2%; }
   .hero__scroll { display: none; }
   .hero__letter { font-size: 120vw; top: 30%; }

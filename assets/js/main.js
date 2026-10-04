@@ -378,7 +378,7 @@
   const heroScroll = { trigger: ".hero", start: "top top", end: "bottom top", scrub: true };
   gsap.to(".hero__content", { yPercent: -14, opacity: 0.25, ease: "none", scrollTrigger: heroScroll });
   gsap.to(".hero__media", { y: 90, ease: "none", scrollTrigger: heroScroll });
-  gsap.to(".hero__thumb", { yPercent: -40, ease: "none", scrollTrigger: heroScroll });
+  gsap.to(".hero__thumb", { yPercent: -15, ease: "none", scrollTrigger: heroScroll });
   gsap.to(".hero__letter", { yPercent: 18, rotate: 8, ease: "none", scrollTrigger: heroScroll });
 
   /* ---------- Marquee with scroll velocity ---------- */
