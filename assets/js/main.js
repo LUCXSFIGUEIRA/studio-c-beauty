@@ -337,7 +337,9 @@
     .from(".hero__eyebrow", { opacity: 0, x: -24 }, 0.6)
     .from([".hero__lead", ".hero__ctas", ".hero__meta"], { opacity: 0, y: 34, stagger: 0.12 }, 0.8)
     .from(".header__inner", { opacity: 0, y: -24, duration: 1.2 }, 0.7)
-    .from(".hero__thumb", { opacity: 0, y: 80, rotate: -8, duration: 1.6 }, 1)
+    .fromTo(".hero__inset",
+      { clipPath: "inset(100% 0% 0% 0%)" },
+      { clipPath: "inset(0% 0% 0% 0%)", duration: 1.5, ease: "expo.inOut", clearProps: "clipPath" }, 0.9)
     .from(badge, {
       scale: 0, rotate: -120, duration: 1.4,
       onStart: () => (badge.style.transition = "none"),
@@ -378,7 +380,7 @@
   const heroScroll = { trigger: ".hero", start: "top top", end: "bottom top", scrub: true };
   gsap.to(".hero__content", { yPercent: -14, opacity: 0.25, ease: "none", scrollTrigger: heroScroll });
   gsap.to(".hero__media", { y: 90, ease: "none", scrollTrigger: heroScroll });
-  gsap.to(".hero__thumb", { yPercent: -15, ease: "none", scrollTrigger: heroScroll });
+  gsap.to(".hero__inset", { yPercent: -12, ease: "none", scrollTrigger: heroScroll });
   gsap.to(".hero__letter", { yPercent: 18, rotate: 8, ease: "none", scrollTrigger: heroScroll });
 
   /* ---------- Marquee with scroll velocity ---------- */
