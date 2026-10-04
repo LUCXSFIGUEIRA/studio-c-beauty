@@ -27,7 +27,7 @@ git push -u origin main
 No GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)` → Save**.
 Em ~1 minuto o site fica disponível em `https://<usuario>.github.io/<repositorio>/`.
 
-**Site no ar:** https://studiocbeauty.com.br/
+**Site no ar:** https://lucxsfigueira.github.io/studio-c-beauty/
 
 As URLs absolutas (`og:image`, `og:url`, `canonical` e JSON-LD) já apontam para esse endereço. Se mudar o domínio, atualize-as no `index.html`.
 
