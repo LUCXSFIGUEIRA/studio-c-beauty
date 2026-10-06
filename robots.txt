@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.studiocbeauty.com.br/sitemap.xml

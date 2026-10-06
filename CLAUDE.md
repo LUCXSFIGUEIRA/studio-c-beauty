@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Static landing page for **Studio C Beauty** — Cássia, Lash Designer in Guareí - SP (Instagram: @studiocbeauty_). All user-facing copy is Brazilian Portuguese. Hosted on GitHub Pages (see README.md for deploy steps).
+Static landing page for **Studio C Beauty** — Cássia, Lash Designer in Guareí - SP (Instagram: @studiocbeauty_). All user-facing copy is Brazilian Portuguese. Hosted on GitHub Pages at https://www.studiocbeauty.com.br/ (custom domain via `CNAME`; absolute URLs in `index.html` and `sitemap.xml` use it). `404.html` is self-contained and uses root-absolute paths.
 
 No build step, package manager, linter or tests. Preview by opening `index.html` or `python -m http.server 8000`.
 

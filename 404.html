@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Página não encontrada | Studio C Beauty</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f6f0ea">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #f6f0ea;
+      --ink: #1d1613;
+      --ink-2: #5d4d45;
+      --bronze: #a67853;
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Jost", system-ui, -apple-system, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+      background: var(--cream);
+      color: var(--ink);
+      font: 300 1.0625rem/1.6 var(--sans);
+      text-align: center;
+    }
+    main { max-width: 520px; }
+    svg { width: 96px; color: var(--bronze); }
+    .code { margin: 18px 0 0; font: 400 .8rem var(--sans); letter-spacing: .3em; text-transform: uppercase; color: var(--bronze); }
+    h1 { margin: 8px 0 14px; font: 400 clamp(2.4rem, 8vw, 3.6rem)/1.05 var(--serif); }
+    h1 em { color: var(--bronze); }
+    p { margin: 0 0 32px; color: var(--ink-2); }
+    a.btn {
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: var(--cream);
+      font-size: .8rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background .3s;
+    }
+    a.btn:hover, a.btn:focus-visible { background: var(--bronze); }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+      <path d="M10 30 Q60 80 110 30"/>
+      <path d="M27 44 L20 55M43 51 L40 64M60 54 L60 68M77 51 L80 64M93 44 L100 55"/>
+    </svg>
+    <p class="code">Erro 404</p>
+    <h1>Esta página <em>piscou</em> e sumiu.</h1>
+    <p>O endereço que você procurou não existe ou foi alterado. Volte para o início para conhecer as técnicas e agendar seu horário.</p>
+    <a class="btn" href="/">Voltar ao início</a>
+  </main>
+</body>
+</html>
