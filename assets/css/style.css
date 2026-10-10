@@ -471,6 +471,13 @@ p { margin: 0; }
 .footer__col h3 { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--rose); margin-bottom: 18px; }
 .footer__col a { display: block; padding: 3px 0; transition: color .3s; }
 .footer__col a:hover { color: var(--cream); }
+.footer__col a.footer__contact { display: flex; align-items: center; gap: 12px; padding: 5px 0; }
+.footer__icon {
+  flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--line-light); color: var(--rose); transition: background .3s, border-color .3s, color .3s;
+}
+.footer__icon svg { width: 17px; height: 17px; }
+.footer__contact:hover .footer__icon { background: var(--rose); border-color: var(--rose); color: var(--night); }
 .footer__big {
   font-family: var(--serif); font-weight: 300; font-size: clamp(56px, 13.5vw, 230px); line-height: 1; white-space: nowrap;
   color: var(--cream); text-align: center; padding: 40px 0 20px; letter-spacing: -.02em;
@@ -478,6 +485,10 @@ p { margin: 0; }
 .footer__big em { color: var(--rose); }
 .footer__bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; padding-top: 24px; border-top: 1px solid var(--line-light); }
 .footer__top-link:hover { color: var(--cream); }
+.footer__credit { display: inline-flex; align-items: center; gap: 10px; transition: color .3s; }
+.footer__credit img { width: auto; height: 18px; opacity: .75; transition: opacity .3s; }
+.footer__credit:hover { color: var(--cream); }
+.footer__credit:hover img { opacity: 1; }
 
 /* ---------- Floating WhatsApp ---------- */
 .wa-float {
